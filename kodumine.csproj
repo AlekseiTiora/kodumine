@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>kodumine.startklass</StartupObject>
+    <StartupObject>kodumine.Kordused</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>images.ico</ApplicationIcon>
@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kordused.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="startklass.cs" />
