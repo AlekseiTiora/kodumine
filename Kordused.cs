@@ -8,100 +8,64 @@ namespace kodumine
 {
     class Kordused
     {
-        static void Main(string[] args)
+        static void Main(string[] argumendid)
         {
 
-            /*string[] nimed = new string[8] { "Aleksei", "Nikita", " Maksim", "Erik", "Artem", "Andrei", "Ilja", "Kolja" };
-            nimed[2] = "BOBA";
-            int nr = 0;
-            while (nr < 8)
-            {
-                Console.WriteLine("Tere,{0} õpilane", nimed[nr]);
-                nr = nr + 1;
-            }
-            Console.WriteLine();
-            for (int i = 0; i < nimed.Length; i++)
-            {
-                Console.WriteLine("Tere,{0} õpilane", nimed[i]);
-            }
-            Console.WriteLine();
-            foreach (var nimi in nimed)
-            {
-                Console.WriteLine("Tere,{0} õpilane", nimi);
-            }
-            Console.WriteLine();
-            nr = 0;
-            do
-            {
-                Console.WriteLine("Tere,{0} õpilane", nimed[nr]);
-                nr++;
-            } while (nr!=nimed.Length) ;*/
 
-             /*Random rnd = new Random();
-             int N = rnd.Next(2, 6);
-             int M = rnd.Next(7, 14);
-             int [] mass  = new int[M - N];
-            Console.WriteLine(N);
-            Console.WriteLine(M);
-            int j = 0;
-            for (int i = N; i < M+1; i++)
+
+            /* Random rnd = new Random();
+
+             int A = rnd.Next(1, 10);//переменная для компа
+             int AA;//kasutaja arv
+             int K = 0;//katsed
+             do
+             {
+                 Console.WriteLine("{0} Popitka. kakoe 4islo?",K);
+                 AA = int.Parse(Console.ReadLine());
+                 K++;
+             } while (AA!=A && K!=6);
+
+             if (AA==A)
+             {
+                 Console.WriteLine("Molodec ti ugodal 4islo. komputer zagadal 4islo {0}",A);
+             }
+
+             else
+             {
+                 Console.WriteLine("ti ne ugodal probui eshe");
+             }*/
+
+            /*int ridadearv = 10, veergudearv = 10;
+            if(argumendid.Length == 2)
             {
-                Console.Write(i - N);
-                Console.ReadLine();
-                mass[j] = i;
-                Console.WriteLine("{0}",i*i);
-                j++;
+                ridadearv = int.Parse(argumendid[0]);
             }
-            foreach (var m in mass)
+            for (int rida = 1; rida <=ridadearv; rida++)
             {
-                Console.WriteLine(m);
+                for(int veerg = 1; veerg <= veergudearv; veerg++)
+                {
+                    Console.Write("{0,5}", rida * veerg); //5kohta
+                }
+                Console.WriteLine();
             }*/
-           /* for (int i = 0; i < 5; i++)
-			{
-                 Console.WriteLine("kirjutage 5 numbrit");
-                int smt = Convert.ToInt32(Console.ReadLine());
-                arr[i] = smt;
-			}
-            int sum = 0;
-            int mult = 1;
-            foreach (var item in arr)
-	        {
-                sum = item;
-                mult = item + mult;
-	        }
-            Console.WriteLine($"hums AVG= {arr.Average()}");*/
 
-
-
-            /*int sum = 0;
-            int mult = 1;
-            for (int i = 0; i < 5; i++)
-			{
-                Console.Write("Kirjuta number");
-                int smt = Convert.ToInt32(Console.ReadLine());
-                sum +=smt;
-                mult=smt * mult;
-			}
-            double avg= sum /5;
-            Console.WriteLine($"Nums AVG = {avg}\nNums SUM = {sum}\nNums multipiled = {mult}");*/
-
-            /*int nr=0;
-            
-            string otvet;
-           do
+            int arv;
+            int[] arvud = new int[4];
+            for (int i = 0; i < 4; i++)
             {
-               Console.WriteLine("Osta elevant ära!");
-               Console.Write("ostad?");
-               Console.WriteLine("");
-               otvet = Console.ReadLine();
+                Console.WriteLine("Sisesta {0} arv", i + 1);
+                arv = int.Parse(Console.ReadLine());
+                arvud[i] = arv;
+            }
+            Array.Sort(arvud);
 
-            }while(otvet!="elevant");
-            Console.WriteLine("sa ostsid elevandi ");*/
-
-            Console.WriteLine("Arvuti mõtles number");
-            do{
-              }
-             
+            int arv4 = 0;
+            Array.Reverse(arvud);
+            foreach(var a in arvud)
+            {
+                arv4 = arv4 * 10 + a;
+            }
+            Console.Write(arv4);
 
 
 

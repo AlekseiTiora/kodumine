@@ -10,7 +10,7 @@
     <AssemblyName>kodumine</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>kodumine.Kordused</StartupObject>
+    <StartupObject>kodumine.Alamprogramm</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>images.ico</ApplicationIcon>
@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abivahend.cs" />
+    <Compile Include="Alamprogramm.cs" />
     <Compile Include="Kordused.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
